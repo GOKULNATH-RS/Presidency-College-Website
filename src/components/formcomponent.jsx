@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Navbar from './components/Navbar';
-import AdmissionForm from './components/AdmissionForm';
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import AdmissionForm from "./components/AdmissionForm";
 
 function App() {
   const [isFormVisible, setIsFormVisible] = useState(false);

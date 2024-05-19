@@ -1,8 +1,9 @@
 import logo from "../assets/images/logo.png";
 import rightArrow from "../assets/icons/right-arrow.svg";
 import hammenu from "../assets/icons/ham-menu.svg";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 const Navbar = ({ onApplyNowClick }) => {
   const navLinks = [
     { name: "Life@" },
@@ -23,7 +24,10 @@ const Navbar = ({ onApplyNowClick }) => {
       </ul>
 
       <div className="h-12 flex justify-between bg-orange w-48 p-2 rounded-full max-md:hidden">
-        <button className="text-center w-full text-white font-semibold" onClick={onApplyNowClick}>
+        <button
+          className="text-center w-full text-white font-semibold"
+          onClick={onApplyNowClick}
+        >
           Apply now
         </button>
         <img src={rightArrow} alt="" />

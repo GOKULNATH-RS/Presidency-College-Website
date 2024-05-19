@@ -6,8 +6,8 @@ import rightArrowoutline from "../assets/icons/right-arrow-outline.svg";
 
 const Footer = () => {
   return (
-    <div className="ml-2 bg-orange w-full h-auto rounded-t-[40px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
-      <div className="flex flex-col md:flex-row justify-around mt-[20px] sm:mt-[40px] md:mt-[68px]">
+    <div className="bg-orange w-full h-auto rounded-t-[40px] p-4 ">
+      <div className="flex flex-col md:flex-row justify-around mt-[20px] max-sm:mt-[40px] max-md:mt-[68px]">
         <div className="text-white mb-8 md:mb-0">
           <img
             src={logo}

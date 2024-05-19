@@ -3,14 +3,16 @@ import insta from "../assets/icons/instagram.svg";
 
 const CampusLife = () => {
   return (
-    <div className="mt-[100px] p-4 sm:p-8 md:p-16">
-      <p className="text-[32px] sm:text-[40px] md:text-[56px] leading-[35px] font-semibold border-b-[10px] border-yellow w-full sm:w-[500px]">
-        Campus Life
-      </p>
-      <p className="py-2 text-[24px] sm:text-[40px] md:text-[56px] font-medium w-full sm:w-[620px]">
-        An international community in the heart of Bengaluru
-      </p>
-      <p className="text-[20px] sm:text-[28px] md:text-[36px] mb-10 leading-[28px] sm:leading-[35px] md:leading-[43px] font-normal w-full sm:w-[998px]">
+    <div className="mt-[100px] p-4 max-sm:p-4 md:p-16 max-sm:text-center">
+      <div className="max-sm:w-full max-sm:flex-center max-sm:flex-col">
+        <p className="text-[32px] sm:text-[40px] md:text-[56px] leading-[35px] font-semibold border-b-[10px] border-yellow w-max max-sm:border-b-[6px]">
+          Campus Life
+        </p>
+        <p className="py-2 text-[24px] max-sm:text-[40px] max-md:text-[56px] font-medium w-full max-sm:w-[400px]">
+          An international community in the heart of Bengaluru
+        </p>
+      </div>
+      <p className="text-[20px] max-sm:text-[12px] max-md:text-[36px] mb-10 leading-[28px] max-sm:leading-[20px]  font-normal w-full sm:w-[998px]">
         Presidency College (Autonomous) <br /> (Re-Accredited by NAAC with A+
         Grade) boast of its green and clean campus which infuses positive vibes
         throughout.
@@ -20,7 +22,10 @@ const CampusLife = () => {
       <div className="py-8 sm:py-12 md:py-16 w-full">
         <div className="flex justify-center flex-wrap ">
           {post.map((item) => (
-            <div key={item.id} className="m-2 relative w-[90%] sm:w-[45%] md:w-[350px] h-[250px] sm:h-[300px] md:h-[378px] ">
+            <div
+              key={item.id}
+              className="m-2 relative w-[90%] sm:w-[45%] md:w-[350px] h-[250px] sm:h-[300px] md:h-[378px] "
+            >
               <img
                 src={item.image}
                 alt="post"

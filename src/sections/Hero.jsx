@@ -1,7 +1,7 @@
 import rightArrow from "../assets/icons/right-arrow.svg";
 import img from "../assets/images/Hero_img.png";
 
-const Hero = () => {
+const Hero = ({ onApplyNowClick }) => {
   return (
     <div className="flex justify-between items-center px-14 pt-10 max-md:px-0 max-md:block">
       {/**Hero Left */}
@@ -32,7 +32,10 @@ const Hero = () => {
           <img src={rightArrow} alt="" />
         </div>
         <div className="p-2 h-9 max-md:flex items-center justify-between bg-orange w-32 my-6 rounded-full hidden">
-          <button className="text-[12px] text-center w-full text-white font-semibold">
+          <button
+            className="text-[12px] text-center w-full text-white font-semibold"
+            onClick={onApplyNowClick}
+          >
             Apply now
           </button>
           <img src={rightArrow} alt="" className="h-6 w-6" />
