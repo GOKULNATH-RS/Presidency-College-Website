@@ -25,29 +25,31 @@ const App = () => {
   };
 
   return (
-    <Router>
-      <Navbar onApplyNowClick={handleApplyNowClick} />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="p-0 m-0 overflow-hidden">
-              <Hero onApplyNowClick={handleApplyNowClick} />
-              <Rank />
-              <Video />
-              <Scholarship />
-              <Programme />
-              <BSchool />
-              <Testimontials />
-              <CampusLife />
-              <Blog />
-              <Footer />
-            </div>
-          }
-        />
-      </Routes>
-      <AdmissionForm isVisible={isFormVisible} onClose={handleFormClose} />
-    </Router>
+    <div className="bg-[#FFF6EA] p-0 m-0 overflow-hidden">
+      <Router>
+        <Navbar onApplyNowClick={handleApplyNowClick} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="p-0 m-0 overflow-hidden ">
+                <Hero onApplyNowClick={handleApplyNowClick} />
+                <Rank />
+                <Video />
+                <Scholarship />
+                <Programme />
+                <BSchool />
+                <Testimontials />
+                <CampusLife />
+                <Blog />
+                <Footer />
+              </div>
+            }
+          />
+        </Routes>
+        <AdmissionForm isVisible={isFormVisible} onClose={handleFormClose} />
+      </Router>
+    </div>
   );
 };
 
